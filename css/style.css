@@ -1,19 +1,16 @@
 :root {
-  --color-primary: #FFB6C1;
-  --color-secondary: #E6E6FA;
-  --color-accent: #FFE4E1;
-  --color-mint: #F0FFF0;
-  --color-peach: #FFEFD5;
-  --color-lavender: #F5F5FF;
-  --color-text: #4A4A4A;
-  --color-text-light: #666666;
+  --color-primary: #3B82F6;
+  --color-secondary: #F3F4F6;
+  --color-accent: #10B981;
+  --color-text: #1F2937;
+  --color-text-light: #6B7280;
   --color-white: #FFFFFF;
   --color-shadow: rgba(0, 0, 0, 0.1);
   --border-radius: 20px;
   --transition: all 0.3s ease;
-  --gradient-1: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  --gradient-2: linear-gradient(135deg, var(--color-accent), var(--color-mint));
-  --gradient-3: linear-gradient(135deg, var(--color-peach), var(--color-lavender));
+  --gradient-1: linear-gradient(135deg, var(--color-primary), #60A5FA);
+  --gradient-2: linear-gradient(135deg, var(--color-accent), #34D399);
+  --gradient-3: linear-gradient(135deg, #F9FAFB, #E5E7EB);
 }
 
 /* Reset & Base Styles */
@@ -27,7 +24,7 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
   color: var(--color-text);
-  background: var(--gradient-1);
+  background: var(--color-secondary);
   min-height: 100vh;
 }
 
@@ -77,7 +74,7 @@ body {
 }
 
 .nav-link:hover {
-  background: var(--gradient-1);
+  background: var(--color-primary);
   color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px var(--color-shadow);
@@ -113,7 +110,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: var(--gradient-1);
+  background: var(--color-primary);
   border-radius: 2px;
 }
 
@@ -162,7 +159,7 @@ body {
   font-weight: 700;
   color: var(--color-white);
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px var(--color-shadow);
+  text-shadow: 1px 1px 2px var(--color-shadow);
 }
 
 .hero-text .subtitle {
@@ -271,7 +268,7 @@ body {
 
 /* Education & Experience */
 .education, .experience {
-  background: var(--color-lavender);
+  background: var(--color-secondary);
 }
 
 .timeline {
@@ -287,7 +284,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--gradient-1);
+  background: var(--color-primary);
   transform: translateX(-50%);
 }
 
@@ -325,7 +322,7 @@ body {
   top: 2rem;
   width: 20px;
   height: 20px;
-  background: var(--gradient-1);
+  background: var(--color-primary);
   border-radius: 50%;
   transform: translateX(-50%);
   border: 4px solid var(--color-white);
@@ -352,7 +349,7 @@ body {
 
 /* Skills Section */
 .skills {
-  background: var(--color-mint);
+  background: var(--color-secondary);
 }
 
 .skills-grid {
@@ -402,21 +399,21 @@ body {
 
 .skill-bar {
   height: 8px;
-  background: var(--color-accent);
+  background: var(--color-secondary);
   border-radius: 4px;
   overflow: hidden;
 }
 
 .skill-progress {
   height: 100%;
-  background: var(--gradient-1);
+  background: var(--color-primary);
   border-radius: 4px;
   transition: width 2s ease-in-out;
 }
 
 /* Certificates Section */
 .certificates {
-  background: var(--color-peach);
+  background: var(--color-secondary);
 }
 
 .certificates-grid {
@@ -490,12 +487,12 @@ body {
 
 .portfolio-image {
   height: 200px;
-  background: var(--gradient-2);
+  background: linear-gradient(135deg, #E0F2FE, #BFDBFE);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .portfolio-content {
@@ -521,8 +518,8 @@ body {
 }
 
 .tech-tag {
-  background: var(--gradient-1);
-  color: var(--color-white);
+  background: #E0F2FE;
+  color: var(--color-primary);
   padding: 0.3rem 1rem;
   border-radius: 15px;
   font-size: 0.85rem;
@@ -539,7 +536,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: var(--gradient-2);
+  background: var(--color-accent);
   color: var(--color-white);
   text-decoration: none;
   border-radius: 20px;
@@ -550,6 +547,7 @@ body {
 .portfolio-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px var(--color-shadow);
+  background: var(--color-primary);
 }
 
 /* Footer */
